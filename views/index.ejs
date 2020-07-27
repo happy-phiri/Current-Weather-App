@@ -1,0 +1,12 @@
+<%- include ('partials/header'); -%>
+    <div class= "main-body">
+        <h1>Current Weather</h1>
+        <p>Reliable source of accurate and up to date information about the current weather.</p>
+
+        <form class= "form-control-lg" action="/" method="post">
+            <input class="input-group" type="text" name="city" placeholder="Enter City Name">
+            <br>
+            <button class= "check-weather btn btn-secondary" type="submit">Check Weather</button>
+        </form>
+    </div>
+    <%- include ('partials/footer'); -%>

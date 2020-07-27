@@ -1,0 +1,61 @@
+<%- include ('partials/header'); -%>
+    <div class= "main-body">
+        <h1>Current Weather in <%= cityName %>, <%= country %></h1>
+
+        <table class="table top-table">
+            <thead>
+                <tr>
+                    <th>
+                        <figure class="figure">
+                            <img src="<%= imageUrl %>" alt="">
+                            <figcaption><%= weatherConditions %></figcaption>
+                        </figure>
+                    </th>
+                    <th>
+                        <h2>Tempreture <br><%= tempreture %>°C</h2>
+                    </th>
+                    
+                </tr>
+                
+            </thead>
+        </table>
+
+        <table class=" table main-table">
+           
+            <tbody>
+                <tr>
+                    <td>Weather Condition</td>
+                    <td><%= mainConditions %></td>
+                </tr>
+                <tr>
+                    <td>Actual Feel</td>
+                    <td><%= actualFeel %> °C</td>
+                </tr>
+                <tr>
+                    <td>Tempreture Range</td>
+                    <td>High <%= maxTempreture %>°C - Low <%= minTempreture %>°C</td>
+                </tr>
+                <tr>
+                    <td>Atmospheric pressure</td>
+                    <td><%= pressure %> hPa</td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td><%= humidity %> %</td>
+                </tr>
+                <tr>
+                    <td>Wind Speed</td>
+                    <td><%= windSpeed %> meters/sec</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="top">
+            
+        </div>
+         <div class="top"> 
+            
+         </div>
+          
+    </div>
+    <%- include ('partials/footer'); -%>

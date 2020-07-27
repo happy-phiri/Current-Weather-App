@@ -1,0 +1,67 @@
+body {
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Martel', serif;
+}
+
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+    font-weight: 600;
+}
+
+.nav-link:active {
+    color: #ffffff;
+}
+
+.main-body {
+    margin: 8% auto;
+}
+
+.input-group {
+    margin: 0 auto;
+    padding: 0.5% 1%;
+    width: 25%;
+}
+
+
+.top-table {
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.main-table {
+    color: #ffffff;
+    margin: 0 auto;
+    width: 45%;
+    border: hidden;
+    text-align: left;
+}
+
+tbody, thead, tr, td {
+    border: hidden;
+}
+
+.tempreture-cell {
+    padding-top: 0;
+}
+
+
+.check-weather {
+    background-color: #43c6ac;
+}
+
+.check-weather:hover {
+    background-color: #4390ac;
+}
+
+.inner {
+    font-size: x-small;
+}
