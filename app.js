@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const _ = require('lodash');
 const https = require('https');
 const ejs = require('ejs');
+require('dotenv').config();
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -38,7 +39,7 @@ app.get("/contact", function(req, res){
 app.post("/", function(req, res){
     cityName = _.upperFirst(req.body.city);
     const units = "metric";
-    const apiKey = "cc007c13acd98828716466bd2afb57fd";
+    const apiKey = process.env.OWM_APIKEY;
     const url ="https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=" + units + "&appid=" + apiKey;
 
 
