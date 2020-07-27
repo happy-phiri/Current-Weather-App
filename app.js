@@ -39,8 +39,8 @@ app.get("/contact", function(req, res){
 app.post("/", function(req, res){
     cityName = _.upperFirst(req.body.city);
     const units = "metric";
-    const apiKey = process.env.OWM_APIKEY;
-    const url ="https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=" + units + "&appid=" + apiKey;
+    const OWM_apiKey = process.env.OWM_APIKEY;
+    const url ="https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=" + units + "&appid=" + OWM_apiKey;
 
 
     https.get(url, function(response){
